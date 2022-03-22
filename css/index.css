@@ -1,0 +1,296 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* -----------------------section------------------------ */
+.items {
+  background-color: #f3f9fd;
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+}
+.items img {
+  width: 50%;
+  filter: grayscale(90);
+  padding-bottom: 20px;
+}
+.items img:hover {
+  filter: none;
+  transition: 0.3s;
+  transform: scale(1.1, 1.1);
+}
+@media (max-width: 768px) {
+  .items img {
+    width: 40%;
+  }
+}
+@media (max-width: 576px) {
+  .items img {
+    width: 30%;
+    padding-top: 30px;
+  }
+}
+/* -----------------------End ofsection------------------------ */
+
+/* -------------------------services------------------------- */
+.services .title {
+  text-align: center;
+  margin-top: 60px;
+}
+.services .title h2 {
+  color: #222222;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+.services .title h2::before {
+  content: "";
+  background-color: #3498db;
+  width: 50px;
+  height: 2px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  margin-right: 10px;
+}
+.services .title h2:after {
+  content: "";
+  background-color: #3498db;
+  width: 50px;
+  height: 2px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  margin-left: 10px;
+}
+.services .title p {
+  color: #444444;
+  margin-top: 15px;
+}
+.services .row {
+  display: flex;
+}
+.services .card {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  align-items: stretch;
+  background-color: #fff;
+  padding: 20px 20px 20px 20px;
+  border: none;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0px 0px 30px 0px rgb(68 88 144 /12%);
+  height: 90%;
+  margin-top: 20px;
+}
+.services .card i {
+  color: #fff;
+  font-size: 26px;
+  height: 60px;
+  width: 60px;
+  background-color: #3498db;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+  padding-top: 17px;
+  margin: 20px 0 10px 20px;
+}
+.services .card .card-title a {
+  color: #111;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.services .card .card-text {
+  color: #444444;
+  font-weight: 400;
+}
+.services .card:hover {
+  background-color: #3498db;
+}
+.services .card:hover i {
+  color: #3498db;
+  background-color: #fff;
+}
+.services .card:hover .card-title a {
+  color: #fff;
+}
+.services .card:hover .card-text {
+  color: #fff;
+}
+.services .card::before {
+  content: "";
+  background-color: #e1f0fa;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: absolute;
+  right: -50px;
+  top: -40px;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+.services .card:hover::before {
+  content: "";
+  background-color: #3498db;
+  border-radius: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.scnd-services {
+  margin-top: 100px;
+}
+.scnd-services .item {
+  position: relative;
+  align-items: stretch;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 42vh;
+  justify-content: center;
+  margin-bottom: 50px;
+  border: 0;
+}
+.scnd-services .item .title {
+  margin: 120px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  height: 22vh;
+  transition: all 0.3s ease-in-out;
+}
+.scnd-services .item .title h3 {
+  color: #222222;
+}
+.scnd-services .item .title p {
+  color: #777777;
+  text-align: start;
+  padding-left: 10px;
+}
+.scnd-services .item .title a {
+  color: #5e5e5e;
+  font-size: 12px;
+  transition: 0.4s;
+  font-weight: 600;
+  top: 120px;
+}
+.scnd-services .item .title a:hover {
+  text-decoration: underline;
+}
+.scnd-services .item .title i {
+  color: #5e5e5e;
+  text-align: start;
+}
+.scnd-services .item .title:hover i {
+  color: #fff;
+}
+.scnd-services .item .title:hover {
+  background-color: #3498db;
+}
+.scnd-services .item .title:hover p {
+  color: #fff;
+}
+.scnd-services .item .title:hover h3 {
+  color: #fff;
+}
+.scnd-services .item .title:hover a {
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .scnd-services .item .title {
+    margin: 40px 0 30px 0;
+    height: 25vh;
+  }
+}
+/* -------------------------End of services------------------------- */
+
+  
+
+/* -----------------------------fFREQUENTLY----------------------------------- */
+.freq h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.freq h2::before {
+  content: "";
+  background-color: #3498db;
+  width: 50px;
+  height: 2px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  margin-right: 10px;
+}
+.freq h2:after {
+  content: "";
+  background-color: #3498db;
+  width: 50px;
+  height: 2px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  margin-left: 10px;
+}
+.freq .freq-coulm {
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+  align-items: center;
+  justify-content: center;
+}
+.freq .freq-item i {
+  line-height: 0;
+  font-size: 24px;
+  color: #8bc4ea;
+  float: left;
+  padding: 13px 0 0 0;
+}
+.freq .freq-item h4 {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 10px 32px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.freq .item-text p {
+  font-size: 14px;
+  margin: 10px 0 10px 0px;
+}
+/* -----------------------------End of fFREQUENTLY----------------------------------- */
+
+/* --------------------------footer---------------------------------------- */
+footer {
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  color: #222222;
+  padding: 30px 0;
+  text-align: center;
+}
+footer span {
+  font-weight: bold;
+}
+footer .link {
+  font-size: 13px;
+  padding-top: 5px;
+  color: #222222;
+}
+.footer-links a {
+  color: #222222;
+  padding-left: 15px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #3498db;
+}
+/* --------------------------End of footer---------------------------------------- */
